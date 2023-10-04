@@ -8,7 +8,6 @@ bool PngppImage::open_image(std::string image_path)
             return false;
         }
 }
-
 void PngppImage::image_info(){
         int W = image.get_width();
         int H = image.get_height();

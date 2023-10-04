@@ -4,17 +4,26 @@ project(image)
 #them thu vien png
 find_package(PNG REQUIRED)
 
-set(CMAKE_PREFIX_PATH "/home/khanhb/Downloads/lodepng-master" ${CMAKE_PREFIX_PATH})
-
-include_directories(${LodePNG_DIR})
-
 find_package(LodePNG REQUIRED)
+
+if (PNG_FOUND)
+    message(STATUS "Package found: ${PackageName_INCLUDE_DIRS}")
+    # Sử dụng PackageName_INCLUDE_DIRS và PackageName_LIBRARIES trong cấu hình dự án của bạn
+else()
+    message(FATAL_ERROR "Package not found. Please install PackageName.")
+endif()
+
+
+file(name name path)
+# find_package(LodePNG REQUIRED)
 
 include_directories(../../include)
 
 add_library(PngppImage ../lib/PngppImage.cpp)
 
 add_library(LodepngImage ../lib/LodepngImage.cpp)
+
+# add_library(lodepng ../lib/lodepng.cpp)
 
 add_executable(image main.cpp)
 
