@@ -1,4 +1,4 @@
-# Install script for directory: /home/khanhb/Workspace/ex1/image_1/src/cmake_multiple_sources
+# Install script for directory: /home/phuoctoan/Workshop/test_image/src/cmake_multiple_sources
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

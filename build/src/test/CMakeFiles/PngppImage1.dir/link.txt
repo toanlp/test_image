@@ -1,0 +1,2 @@
+/usr/bin/ar qc libPngppImage1.a CMakeFiles/PngppImage1.dir/__/lib/PngppImage.cpp.o
+/usr/bin/ranlib libPngppImage1.a

@@ -1,4 +1,4 @@
-# Install script for directory: /home/khanhb/Workspace/ex1/image_1
+# Install script for directory: /home/phuoctoan/Workshop/test_image
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,7 +44,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/khanhb/Workspace/ex1/image_1/build/src/cmake_multiple_sources/cmake_install.cmake")
+  include("/home/phuoctoan/Workshop/test_image/build/src/cmake_multiple_sources/cmake_install.cmake")
+  include("/home/phuoctoan/Workshop/test_image/build/src/test/cmake_install.cmake")
 
 endif()
 
@@ -56,5 +57,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/khanhb/Workspace/ex1/image_1/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/phuoctoan/Workshop/test_image/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -6,8 +6,6 @@ find_package(GTest REQUIRED)
 
 find_package(PNG REQUIRED)
 
-file()
-
 include_directories(../../include)
 
 add_library(PngppImage1 ../lib/PngppImage.cpp)
